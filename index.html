@@ -1,99 +1,46 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Muhammad Huzaifa Latif - Portfolio</title>
-    <style>
-        body {
-            font-family: Arial, sans-serif;
-            background-color: #0d1117;
-            color: white;
-            margin: 0;
-            padding: 0;
-        }
-        .container {
-            width: 80%;
-            margin: auto;
-            padding: 20px;
-        }
-        header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            padding: 20px;
-            background: #161b22;
-            border-bottom: 2px solid #58a6ff;
-        }
-        .profile {
-            display: flex;
-            align-items: center;
-        }
-        .profile img {
-            width: 80px;
-            height: 80px;
-            border-radius: 50%;
-            margin-right: 15px;
-        }
-        .btn {
-            padding: 10px 20px;
-            background: #58a6ff;
-            color: white;
-            border: none;
-            cursor: pointer;
-            text-decoration: none;
-            border-radius: 5px;
-        }
-        .section {
-            padding: 50px 0;
-        }
-        .skills, .projects, .contact {
-            text-align: center;
-        }
-        .skills img {
-            width: 50px;
-            margin: 10px;
-        }
-    </style>
-</head>
-<body>
-    <header>
-        <div class="profile">
-            <img src="your-photo.jpg" alt="Muhammad Huzaifa Latif">
-            <h1>Muhammad Huzaifa Latif</h1>
+import Head from 'next/head';
+import Image from 'next/image';
+import { motion } from 'framer-motion';
+
+export default function Home() {
+  return (
+    <div className="bg-gray-900 text-white min-h-screen">
+      <Head>
+        <title>Portfolio</title>
+      </Head>
+
+      {/* Hero Section */}
+      <header className="text-center py-20">
+        <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="text-4xl font-bold">
+          Hi, I'm Ivan Dan
+        </motion.h1>
+        <p className="text-lg text-gray-400">Full-Stack Developer & Designer</p>
+      </header>
+
+      {/* Skills Section */}
+      <section className="max-w-4xl mx-auto text-center py-10">
+        <h2 className="text-2xl font-semibold mb-5">My Skills</h2>
+        <div className="grid grid-cols-3 gap-4">
+          <div className="bg-gray-800 p-4 rounded">React</div>
+          <div className="bg-gray-800 p-4 rounded">Next.js</div>
+          <div className="bg-gray-800 p-4 rounded">Tailwind CSS</div>
         </div>
-        <a href="your-resume.pdf" class="btn">Download CV</a>
-    </header>
-    
-    <div class="container">
-        <section class="section about">
-            <h2>About Me</h2>
-            <p>Full-stack Developer | Passionate about Web & Mobile Development</p>
-        </section>
+      </section>
 
-        <section class="section skills">
-            <h2>Skills</h2>
-            <img src="html-icon.png" alt="HTML">
-            <img src="css-icon.png" alt="CSS">
-            <img src="js-icon.png" alt="JavaScript">
-            <img src="flutter-icon.png" alt="Flutter">
-            <img src="react-icon.png" alt="React">
-        </section>
+      {/* Portfolio Section */}
+      <section className="max-w-4xl mx-auto text-center py-10">
+        <h2 className="text-2xl font-semibold mb-5">Portfolio</h2>
+        <div className="grid grid-cols-2 gap-4">
+          <Image src="/project1.jpg" width={300} height={200} alt="Project 1" className="rounded" />
+          <Image src="/project2.jpg" width={300} height={200} alt="Project 2" className="rounded" />
+        </div>
+      </section>
 
-        <section class="section projects">
-            <h2>Projects</h2>
-            <p>AdBoard: Simplifying Outdoor Advertising</p>
-            <p>Fruit Shop App (Flutter)</p>
-            <p>Weather App with Animations</p>
-            <p>Mobile Laptop Buy & Sell Website (ASP.NET)</p>
-        </section>
-
-        <section class="section contact">
-            <h2>Contact</h2>
-            <p>Email: huzaifa@example.com</p>
-            <p>LinkedIn: <a href="https://linkedin.com/in/huzaifa" class="btn">LinkedIn Profile</a></p>
-            <p>GitHub: <a href="https://github.com/huzaifa" class="btn">GitHub Profile</a></p>
-        </section>
+      {/* Contact Section */}
+      <footer className="text-center py-10">
+        <h2 className="text-2xl font-semibold">Contact Me</h2>
+        <p>Email: ivan@example.com</p>
+      </footer>
     </div>
-</body>
-</html>
+  );
+}
