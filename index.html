@@ -7,86 +7,93 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            background-color: #0D1117;
-            color: #C9D1D9;
+            background-color: #0d1117;
+            color: white;
             margin: 0;
             padding: 0;
-            text-align: center;
         }
-        header {
-            background-color: #161B22;
+        .container {
+            width: 80%;
+            margin: auto;
             padding: 20px;
         }
-        .download-btn {
-            background-color: #238636;
-            color: white;
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            padding: 20px;
+            background: #161b22;
+            border-bottom: 2px solid #58a6ff;
+        }
+        .profile {
+            display: flex;
+            align-items: center;
+        }
+        .profile img {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            margin-right: 15px;
+        }
+        .btn {
             padding: 10px 20px;
+            background: #58a6ff;
+            color: white;
+            border: none;
+            cursor: pointer;
             text-decoration: none;
             border-radius: 5px;
         }
-        section {
-            margin: 20px;
-            padding: 20px;
-            background-color: #161B22;
-            border-radius: 10px;
+        .section {
+            padding: 50px 0;
         }
-        ul {
-            list-style: none;
-            padding: 0;
+        .skills, .projects, .contact {
+            text-align: center;
         }
-        ul li {
-            margin: 10px 0;
-        }
-        a {
-            color: #58A6FF;
-            text-decoration: none;
+        .skills img {
+            width: 50px;
+            margin: 10px;
         }
     </style>
 </head>
 <body>
     <header>
-        <h1>Muhammad Huzaifa Latif</h1>
-        <p>Flutter | .NET | Kotlin | AI</p>
-        <a href="Muhammad_Huzaifa_Latif_Resume.pdf" class="download-btn">Download Resume</a>
+        <div class="profile">
+            <img src="your-photo.jpg" alt="Muhammad Huzaifa Latif">
+            <h1>Muhammad Huzaifa Latif</h1>
+        </div>
+        <a href="your-resume.pdf" class="btn">Download CV</a>
     </header>
     
-    <section id="about">
-        <h2>About Me</h2>
-        <p>Passionate Computer Science student specializing in Flutter, .NET, Kotlin, and AI-driven solutions...</p>
-    </section>
-    
-    <section id="skills">
-        <h2>Skills</h2>
-        <ul>
-            <li>Flutter, Firebase, OpenCV</li>
-            <li>.NET MVC, Blazor</li>
-            <li>Python, AI, RAG</li>
-            <li>SQL, Kotlin, Dart</li>
-        </ul>
-    </section>
-    
-    <section id="projects">
-        <h2>Projects</h2>
-        <ul>
-            <li>AdBoard App - Outdoor advertising management</li>
-            <li>PakWheels Dummy App - Vehicle buying/selling</li>
-            <li>Instagram Clone App - Social media platform</li>
-        </ul>
-    </section>
-    
-    <section id="experience">
-        <h2>Experience</h2>
-        <ul>
-            <li>Flutter Developer Intern - IIFA Tech</li>
-            <li>AI Lab Teaching Assistant - PUCIT</li>
-        </ul>
-    </section>
-    
-    <section id="contact">
-        <h2>Contact</h2>
-        <p>Email: muhammadhuzaifalatif.official@gmail.com</p>
-        <p>LinkedIn: <a href="https://www.linkedin.com/in/muhammadhuzaifalatif">Profile</a></p>
-        <p>GitHub: <a href="https://github.com/HuzaifaLatif13">Profile</a></p>
-    </section>
+    <div class="container">
+        <section class="section about">
+            <h2>About Me</h2>
+            <p>Full-stack Developer | Passionate about Web & Mobile Development</p>
+        </section>
+
+        <section class="section skills">
+            <h2>Skills</h2>
+            <img src="html-icon.png" alt="HTML">
+            <img src="css-icon.png" alt="CSS">
+            <img src="js-icon.png" alt="JavaScript">
+            <img src="flutter-icon.png" alt="Flutter">
+            <img src="react-icon.png" alt="React">
+        </section>
+
+        <section class="section projects">
+            <h2>Projects</h2>
+            <p>AdBoard: Simplifying Outdoor Advertising</p>
+            <p>Fruit Shop App (Flutter)</p>
+            <p>Weather App with Animations</p>
+            <p>Mobile Laptop Buy & Sell Website (ASP.NET)</p>
+        </section>
+
+        <section class="section contact">
+            <h2>Contact</h2>
+            <p>Email: huzaifa@example.com</p>
+            <p>LinkedIn: <a href="https://linkedin.com/in/huzaifa" class="btn">LinkedIn Profile</a></p>
+            <p>GitHub: <a href="https://github.com/huzaifa" class="btn">GitHub Profile</a></p>
+        </section>
+    </div>
 </body>
 </html>
