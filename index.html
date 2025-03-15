@@ -1,46 +1,161 @@
-import Head from 'next/head';
-import Image from 'next/image';
-import { motion } from 'framer-motion';
-
-export default function Home() {
-  return (
-    <div className="bg-gray-900 text-white min-h-screen">
-      <Head>
-        <title>Portfolio</title>
-      </Head>
-
-      {/* Hero Section */}
-      <header className="text-center py-20">
-        <motion.h1 initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ duration: 1 }} className="text-4xl font-bold">
-          Hi, I'm Ivan Dan
-        </motion.h1>
-        <p className="text-lg text-gray-400">Full-Stack Developer & Designer</p>
-      </header>
-
-      {/* Skills Section */}
-      <section className="max-w-4xl mx-auto text-center py-10">
-        <h2 className="text-2xl font-semibold mb-5">My Skills</h2>
-        <div className="grid grid-cols-3 gap-4">
-          <div className="bg-gray-800 p-4 rounded">React</div>
-          <div className="bg-gray-800 p-4 rounded">Next.js</div>
-          <div className="bg-gray-800 p-4 rounded">Tailwind CSS</div>
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <link rel="stylesheet" href="globals.css" />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="portfolio">
+      <div class="div">
+        <div class="overlap">
+          <img class="background" src="img/background.png" />
+          <img class="gradient" src="img/gradient-2.png" />
+          <img class="img" src="img/gradient-4.png" />
+          <img class="gradient-2" src="img/gradient.png" />
+          <img class="gradient-3" src="img/gradient-5.png" />
+          <img class="gradient-4" src="img/gradient-3.png" />
+          <img class="img-2" src="img/portfolio.png" />
+          <img class="img-3" src="img/portfolio-2.png" />
+          <img class="header" src="img/header.png" />
+          <div class="text-wrapper">Home</div>
+          <div class="text-wrapper-2">About</div>
+          <div class="text-wrapper-3">Lab</div>
+          <div class="i-m-a-software">I&#39;m a Software Engineer.|</div>
+          <p class="judges-a-book-by-its">
+            <span class="span">Judges a book<br />by its </span>
+            <span class="text-wrapper-4">cover</span>
+            <span class="span">...</span>
+          </p>
+          <div class="text-wrapper-5">A Designer who</div>
+          <p class="p">Because if the cover does not impress you what else can?</p>
+          <p class="a-self-taught-UI-UX">
+            A self-taught UI/UX designer, functioning in the industry for 3+ years now.<br />I make meaningful and
+            delightful digital products that create an equilibrium<br />between user needs and business goals.
+          </p>
+          <div class="text-wrapper-6">Work Experience</div>
+          <p class="hello-i-am-ibrahim">
+            <span class="text-wrapper-7">Hello! I Am </span> <span class="text-wrapper-8">Ibrahim Memon</span>
+          </p>
+          <img class="arrow" src="img/arrow.png" />
+          <img class="ellipse" src="img/ellipse-5.png" />
+          <div class="text-wrapper-9">Contact</div>
+          <p class="i-m-currently">
+            I&#39;m currently looking to join a cross-functional team that values improving people&#39;s lives<br />through
+            accessible design. or have a project in mind? Let&#39;s connect.<br /><br />ibrhaimmemon930@gmail.com
+          </p>
+          <img class="logo" src="img/logo.png" />
+          <div class="designation">
+            <div class="overlap-group">
+              <p class="currently-i-m-a">
+                <span class="text-wrapper-10">Currently, I&#39;m a Software Engineer at&nbsp;&nbsp;&nbsp;&nbsp; </span>
+                <span class="text-wrapper-11">Facebook</span>
+                <span class="text-wrapper-10">,</span>
+              </p>
+              <img class="group" src="img/group-1898.png" />
+            </div>
+          </div>
+          <div class="experience">
+            <div class="overlap-2">
+              <div class="rectangle"></div>
+              <img class="mask-group" src="img/mask-group-4.png" />
+              <div class="text-wrapper-12">CIB on the Mobile</div>
+              <p class="take-your-client">
+                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+              </p>
+              <div class="learn-more">
+                <div class="div-wrapper"><div class="text-wrapper-13">LEARN MORE</div></div>
+              </div>
+              <img class="group-2" src="img/group-2.png" />
+            </div>
+          </div>
+          <img class="img-2" src="img/image.png" />
+          <div class="overlap-wrapper">
+            <div class="overlap-3">
+              <img class="mask-group" src="img/mask-group-2.png" />
+              <div class="rectangle-2"></div>
+              <div class="rectangle-3"></div>
+              <div class="text-wrapper-14">CIB on the Mobile</div>
+              <p class="take-your-client-2">
+                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+              </p>
+              <div class="overlap-group-wrapper">
+                <div class="overlap-group-2"><div class="text-wrapper-13">LEARN MORE</div></div>
+              </div>
+              <img class="group-3" src="img/group-1938.png" />
+            </div>
+          </div>
+          <div class="experience-2">
+            <div class="overlap-3">
+              <img class="mask-group" src="img/mask-group.png" />
+              <div class="rectangle-2"></div>
+              <div class="rectangle-3"></div>
+              <div class="text-wrapper-15">CIB on the Mobile</div>
+              <p class="take-your-client-3">
+                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+              </p>
+              <div class="learn-more-2">
+                <div class="overlap-group-3"><div class="text-wrapper-13">LEARN MORE</div></div>
+              </div>
+              <img class="icons" src="img/icons.png" />
+            </div>
+          </div>
+          <img class="card" src="img/card-2.png" />
+          <div class="portfolio-text">
+            <p class="a-web-app-for">
+              A web app for visualizing personalized Spotify data. View your<br />top artists, top tracks, recently
+              played tracks, and detailed audio<br />information about each track. Create and save new playlists of<br />recommended
+              tracks based on your existing playlists and more.
+            </p>
+            <div class="overlap-4">
+              <div class="text-wrapper-16">Example Project</div>
+              <div class="featured-project">Featured&nbsp;&nbsp;Project</div>
+            </div>
+            <div class="icon-park-solid-wrapper">
+              <img class="icon-park-solid" src="img/icon-park-solid-click-2.svg" />
+            </div>
+            <img class="icon-park-solid-2" src="img/icon-park-solid-click-3.svg" />
+          </div>
+          <div class="portfolio-text-2">
+            <div class="a-web-app-for-wrapper">
+              <p class="a-web-app-for-2">
+                A web app for visualizing personalized Spotify data. View your<br />top artists, top tracks, recently
+                played tracks, and detailed audio<br />information about each track. Create and save new playlists of<br />recommended
+                tracks based on your existing playlists and more.
+              </p>
+            </div>
+            <div class="overlap-5">
+              <div class="text-wrapper-16">Example Project</div>
+              <div class="featured-project-2">Featured&nbsp;&nbsp;Project</div>
+            </div>
+            <div class="img-wrapper"><img class="icon-park-solid" src="img/icon-park-solid-click-4.svg" /></div>
+            <img class="icon-park-solid-3" src="img/image.svg" />
+          </div>
+          <img class="skills" src="img/skills.png" />
+          <img class="social-icons" src="img/social-icons.png" />
+          <img class="me" src="img/me.png" />
+          <div class="experience-3">
+            <div class="overlap-2">
+              <div class="rectangle"></div>
+              <img class="mask-group" src="img/mask-group-3.png" />
+              <div class="text-wrapper-17">CIB on the Mobile</div>
+              <p class="take-your-client-4">
+                Take your client onboard seamlessly by our amazing<br />tool of digital onboard process.
+              </p>
+              <div class="learn-more-3">
+                <div class="overlap-group-4"><div class="text-wrapper-13">LEARN MORE</div></div>
+              </div>
+              <img class="group-4" src="img/group-1935.png" />
+            </div>
+          </div>
         </div>
-      </section>
-
-      {/* Portfolio Section */}
-      <section className="max-w-4xl mx-auto text-center py-10">
-        <h2 className="text-2xl font-semibold mb-5">Portfolio</h2>
-        <div className="grid grid-cols-2 gap-4">
-          <Image src="/project1.jpg" width={300} height={200} alt="Project 1" className="rounded" />
-          <Image src="/project2.jpg" width={300} height={200} alt="Project 2" className="rounded" />
+        <p class="text-wrapper-18">Developed web.hr landing page which is utilized in 25,000+ companies.</p>
+        <div class="i-m-a-software-2">I&#39;m a Software Engineer.</div>
+        <div class="i-m-a-software-3">I&#39;m a Software Engineer.</div>
+        <div class="linkedin-behance">
+          LinkedIn<br />&gt;&gt;<br />Behance<br />&gt;&gt;<br />Dribbble<br />&gt;&gt;<br />Instagram<br />&gt;&gt;<br />logo
         </div>
-      </section>
-
-      {/* Contact Section */}
-      <footer className="text-center py-10">
-        <h2 className="text-2xl font-semibold">Contact Me</h2>
-        <p>Email: ivan@example.com</p>
-      </footer>
+      </div>
     </div>
-  );
-}
+  </body>
+</html>
